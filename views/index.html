@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<block class = "main_page">
+
+	<div id="map" class="map">
+		<p>paragraph</p>
+	</div>
+
+	<div>
+	<ul class="selections">
+
+		<li>
+			<label>Hotel:</label>
+			<select id = "hotel-list" class = "list-unstyled">
+				{% for hotel in hotel_list %}
+					<option value = {{hotel.id}}>{{hotel.name}}</option>
+				{% endfor %}
+			</select>
+		</li>
+
+		<li>
+			<label>Restaurant:</label>
+			<select id = "restaurant-list" class = "list-unstyled">
+				{% for restaurant in restaurant_list %}
+					<option value = {{restaurant.id}}>{{restaurant.name}}</option>
+				{% endfor %}
+			</select>
+		</li>
+
+		<li>
+			<label>Activity:</label>
+			<select id = "activity-list" class = "list-unstyled">
+				{% for activity in activity_list %}
+					<option value = {{activity.id}}>{{activity.name}}</option>
+				{% endfor %}
+			</select>
+		</li>
+
+	</ul>
+	<div>
+
+</block>
+
+{% endblock %}

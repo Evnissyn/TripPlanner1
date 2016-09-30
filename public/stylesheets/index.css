@@ -1,0 +1,17 @@
+.h1 {
+  font: bold; }
+
+.main_page {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  background-color: grey;
+  color: red; }
+
+#map {
+  width: 75%;
+  height: 800px;
+  background-color: black; }
+
+.selections {
+  width: 25%; }
